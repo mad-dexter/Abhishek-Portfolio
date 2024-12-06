@@ -69,7 +69,7 @@ function ContactMe() {
           <div className="text-center">
             <a
               href="mailto:paulsidabhishek009@gmail.com"
-              className="pointer-events-auto mx-auto flex w-fit items-center justify-center gap-2 rounded-lg border bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:bg-slate-700 dark:hover:bg-slate-600"
+              className="pointer-events-auto mx-auto mb-8 flex w-fit items-center justify-center gap-2 rounded-lg border bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:bg-slate-700 dark:hover:bg-slate-600"
             >
               <MailIcon className="h-5 w-5" />
               Say Hello

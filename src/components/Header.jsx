@@ -28,7 +28,8 @@ function Header() {
 
   return (
     <header className="flex items-center justify-between border-b px-4 py-4 md:px-10 dark:text-white">
-      <h1 className="text-xl font-bold">Abhishek Paul</h1>
+      <h1 className="hidden text-xl font-bold md:flex">Abhishek Paul</h1>
+      <h1 className="text-xl font-bold md:hidden">Abhishek</h1>
       <nav>
         <ul className="flex items-center gap-6">
           <li>
