@@ -1,6 +1,9 @@
 import { MailIcon, Phone, MapPin, Mail } from "lucide-react";
 import { useEffect, useRef } from "react";
 
+const baseStyleBtn =
+  "pointer-events-auto mx-auto mb-8 flex w-fit items-center justify-center gap-2 rounded-lg border bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:bg-slate-700 dark:hover:bg-slate-600";
+
 function ContactMe() {
   const contactImage = useRef(null);
 
@@ -31,7 +34,7 @@ function ContactMe() {
   }, []);
 
   return (
-    <section id="contact" className="pb-2 pt-20">
+    <section id="contact" className="pb-2 pt-16">
       <div className="text-center">
         <h3 className="mb-6 text-4xl font-extrabold tracking-wide text-slate-900 sm:text-5xl dark:text-white">
           Get In Touch
@@ -69,9 +72,13 @@ function ContactMe() {
           <div className="text-center">
             <a
               href="mailto:paulsidabhishek009@gmail.com"
-              className="pointer-events-auto mx-auto mb-8 flex w-fit items-center justify-center gap-2 rounded-lg border bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:bg-slate-700 dark:hover:bg-slate-600"
+              className={`${baseStyleBtn} hidden lg:flex`}
             >
               <MailIcon className="h-5 w-5" />
+              Say Hello
+            </a>
+            <a href="tel:+919176173120" className={`${baseStyleBtn} lg:hidden`}>
+              <Phone className="h-5 w-5" />
               Say Hello
             </a>
           </div>

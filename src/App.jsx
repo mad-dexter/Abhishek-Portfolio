@@ -1,23 +1,24 @@
-import Skills from "./components/Skills";
-import ContactMe from "./components/ContactMe";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Error from "./components/Error";
+import MyExperience from "./pages/MyExperience";
+
+// Defining the router
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/experience",
+    element: <MyExperience />,
+    errorElement: <Error />,
+  },
+]);
 
 function App() {
-  return (
-    <div className="w-full">
-      <Header />
-      <main className="px-6 md:px-20">
-        <Hero />
-        <Projects />
-        <Skills />
-        <ContactMe />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

@@ -5,7 +5,7 @@ function Hero() {
     <section className="flex flex-col gap-20 py-20">
       <div className="flex flex-col items-center gap-10 md:flex-row">
         <div className="flex flex-col gap-5 md:w-1/2">
-          <h1 className="text-center text-4xl font-extrabold tracking-wide text-slate-900 sm:text-5xl lg:text-7xl dark:text-white">
+          <h1 className="text-center text-5xl font-extrabold tracking-wide text-slate-900 lg:text-7xl dark:text-white">
             I will help you <br />
             Bring your <br />
             brand to{" "}

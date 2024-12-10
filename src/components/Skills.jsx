@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 
 function Skills() {
   const skillDiv = useRef(null);
@@ -120,6 +121,14 @@ function Skills() {
             </p>
           </div>
         </div>
+        {/* Experience link */}
+        <NavLink
+          to="/experience"
+          className="flex items-center gap-2 font-mono text-xl font-semibold text-sky-500 transition-all duration-300 hover:gap-3 hover:text-sky-500 hover:underline hover:underline-offset-8 dark:hover:text-sky-400"
+        >
+          See my experience{" "}
+          <ion-icon name="arrow-forward-outline" class="h-6 w-6"></ion-icon>
+        </NavLink>
       </div>
     </section>
   );
