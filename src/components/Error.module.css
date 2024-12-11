@@ -1,5 +1,5 @@
 .errorBody {
-  background-image: url("/public/assets/images/star.svg"),
+  background-image: url("/assets/images/star.svg"),
     linear-gradient(to bottom, #05007a, #4d007d);
   height: 100vh;
   margin: 0;
@@ -14,7 +14,7 @@
   bottom: 0;
   position: absolute;
   height: 27vmin;
-  background: url("/public/assets/images/mars.svg") no-repeat bottom center;
+  background: url("/assets/images/mars.svg") no-repeat bottom center;
   background-size: cover;
 }
 

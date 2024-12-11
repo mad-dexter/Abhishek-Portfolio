@@ -11,7 +11,7 @@ function Error() {
       {/* Mars code */}
       <div className={styles.mars}></div>
 
-      <img src="/public/assets/images/meteor.svg" className={styles.meteor} />
+      <img src="/assets/images/meteor.svg" className={styles.meteor} />
       <div className="mt-32 flex flex-col items-center justify-center gap-4">
         <p className={styles.title}>Oh no!! Something went wrong 😢</p>
 
@@ -27,14 +27,8 @@ function Error() {
           Go back
         </Link>
       </div>
-      <img
-        src="/public/assets/images/astronaut.svg"
-        className={styles.astronaut}
-      />
-      <img
-        src="/public/assets/images/spaceship.svg"
-        className={styles.spaceship}
-      />
+      <img src="/assets/images/astronaut.svg" className={styles.astronaut} />
+      <img src="/assets/images/spaceship.svg" className={styles.spaceship} />
     </div>
   );
 }
