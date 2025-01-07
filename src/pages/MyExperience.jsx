@@ -1,10 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 
 import Footer from "../components/Footer";
-import Link from "../components/Link";
 import { ExperienceData } from "../../data/Experience";
 import ExperienceItem from "../components/ExperienceItem";
 import { useEffect } from "react";
+import PageHeader from "../components/PageHeader";
 
 function MyExperience() {
   useEffect(() => {
@@ -17,12 +17,7 @@ function MyExperience() {
 
   return (
     <div className="w-full">
-      <header className="flex items-center justify-between border-b px-4 py-4 md:px-10 dark:text-white">
-        <Link to={-1} className="flex items-center justify-center gap-2">
-          <ion-icon name="arrow-back-circle-outline" class="h-6 w-6"></ion-icon>{" "}
-          Back to Home
-        </Link>
-      </header>
+      <PageHeader />
       <main className="px-6 md:px-20">
         <section
           id="projects"
@@ -50,7 +45,6 @@ function MyExperience() {
           </div>
         </section>
       </main>
-
       <Footer />
     </div>
   );
