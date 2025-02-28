@@ -1,4 +1,5 @@
 import Link from "../components/Link";
+import DarkMode from "./DarkMode";
 
 function PageHeader() {
   return (
@@ -7,6 +8,9 @@ function PageHeader() {
         <ion-icon name="arrow-back-circle-outline" class="h-6 w-6"></ion-icon>{" "}
         Back to Home
       </Link>
+      <div className="flex flex-row-reverse items-center justify-end gap-4 md:flex-row">
+        <DarkMode />
+      </div>
     </header>
   );
 }

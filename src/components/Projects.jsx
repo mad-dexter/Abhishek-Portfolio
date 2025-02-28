@@ -18,7 +18,7 @@ function Projects() {
           {ProjectData.map((project) => {
             if (project.type === "Landing" && landingCount < 3) {
               landingCount += 1;
-              return <ProjectItem project={project} key={project.githubURL} />;
+              return <ProjectItem project={project} key={project.id} />;
             }
           })}
         </div>
@@ -38,7 +38,7 @@ function Projects() {
           {ProjectData.map((project) => {
             if (project.type === "Website" && websiteCount < 3) {
               websiteCount += 1;
-              return <ProjectItem project={project} key={project.githubURL} />;
+              return <ProjectItem project={project} key={project.id} />;
             }
           })}
         </div>

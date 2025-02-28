@@ -11,7 +11,7 @@ function MyExperience() {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "smooth", // For smooth scrolling
+      behavior: "instant", // For smooth scrolling
     });
   }, []);
 
@@ -19,10 +19,7 @@ function MyExperience() {
     <div className="w-full">
       <PageHeader />
       <main className="px-6 md:px-20">
-        <section
-          id="projects"
-          className="flex flex-col items-center gap-14 py-10"
-        >
+        <section className="flex flex-col items-center gap-14 py-10">
           <h2 className="text-4xl font-extrabold tracking-wide text-slate-900 sm:text-5xl dark:text-white">
             My Experience
           </h2>

@@ -9,7 +9,7 @@ function MyProjects() {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "smooth", // For smooth scrolling
+      behavior: "instant", // For smooth scrolling
     });
   }, []);
 
@@ -17,10 +17,7 @@ function MyProjects() {
     <div className="w-full">
       <PageHeader />
       <main className="px-6 md:px-20">
-        <section
-          id="projects"
-          className="flex flex-col items-center gap-14 py-10"
-        >
+        <section className="flex flex-col items-center gap-14 py-10">
           <h2 className="text-4xl font-extrabold tracking-wide text-slate-900 sm:text-5xl dark:text-white">
             My Projects
           </h2>
@@ -31,9 +28,7 @@ function MyProjects() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {ProjectData.map((project) => {
                 if (project.type === "Landing") {
-                  return (
-                    <ProjectItem project={project} key={project.githubURL} />
-                  );
+                  return <ProjectItem project={project} key={project.id} />;
                 }
               })}
             </div>
@@ -45,9 +40,7 @@ function MyProjects() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {ProjectData.map((project) => {
                 if (project.type === "Website") {
-                  return (
-                    <ProjectItem project={project} key={project.githubURL} />
-                  );
+                  return <ProjectItem project={project} key={project.id} />;
                 }
               })}
             </div>
